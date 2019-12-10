@@ -302,12 +302,10 @@
 
     /*Lightbox*/
 
-    #lightbox:hover {
-        width:60%;
-        height:80%;
+    #lightbox:active {
         top:auto;
-        left:80px;
-        transform:.5s ease;
+        left:130px;
+        transform:scale(1.5);
         z-index:15;
         position:absolute;
     }
@@ -320,5 +318,4 @@
 }
 
 /*DESKTOP*/@media only screen and (min-width:1025px){
-
 }

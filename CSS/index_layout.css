@@ -1,18 +1,28 @@
 /*MOBILE*/@media only screen and (min-width:307px) and (max-width:600px){
 
     /*Fonts*/
-
-    @import  url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-    @font-face {
-        font-family: 'Vision-Heavy';
-        src: url('FONTS/Vision-Heavy.otf');
-    }
+    @import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Cormorant+Upright|DM+Serif+Display|Fredericka+the+Great|Josefin+Slab|Lobster|Megrim|Plaster|Quicksand|Rozha+One|Sacramento|Sulphur+Point&display=swap');
+    /*Font Library
+    font-family: 'Sacramento', cursive;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Rozha One', serif;
+    font-family: 'Cormorant Upright', serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Sulphur Point', sans-serif;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Megrim', cursive;
+    font-family: 'Plaster', cursive;
+    */
 
     /*HTML Styles */
-
+    *::selection::-moz-selection,::-ms-selection::-webkit-selection {
+        background-color:rgba(253, 47, 184, 0.945);
+    }
     html {
-        background-color:rgba(68, 68, 68, 0.075);
+        background-color:rgba(255, 70, 193, 0.876);
         scroll-behavior:smooth;
     }
 
@@ -94,7 +104,7 @@
         grid-column-end:2;
         grid-row-start: 7;
         grid-row-end: 8;
-        background-color:#ffffffbd;
+        background-color:rgb(14, 31, 54);
         display:flexbox;
         margin:1rem;
         color:#353535;
@@ -106,8 +116,9 @@
         grid-column-end: 2;
         grid-row-start: 8;
         grid-row-end: 11;
-        background-color: #353535;
-        color:#ffffff;
+        background-color: rgb(14, 31, 54);
+        color:rgb(14, 31, 54);
+        height:150px;
         display:flexbox;
     }
 
@@ -143,16 +154,12 @@
    
 
    .hero > img {
-       object-fit:cover;
-       width:100%;
-       height:100%;
+       width:70%;
+       height:70%;
+       padding-left:75px;
     }
 
     /*Link Styles*/
-
-    a {
-        color:rgb(255, 153, 0);
-    }
 
     nav.nav > a {
         flex:1;
@@ -163,25 +170,17 @@
     
     .wordlink {
         text-decoration:none;
-        color:rgb(143, 143, 143);
+        color:rgb(158,226,209);
     }
 
     .wordlink:hover {
-        color:rgba(41, 255, 166, 0.658);
-    }
-
-    .nav > a:hover {
-        background-color:#f7941d;
-        text-shadow:1.5px 0px 1px rgba(255, 255, 255, 0.952);
-        color:#4d2c03;
-        display:flexbox;
-        padding:0px 36px 0px 36px;
+        color:rgba(253, 47, 184, 0.945);;
     }
 
     .nav > a {
         text-decoration:none;
         border-radius: 0px 20px 0px 20px;
-        color:#f0f0f0;
+        color:rgb(158,226,209);
         font-family:'Vision-Heavy';
         font-style:bold;
         letter-spacing:1px;
@@ -189,79 +188,182 @@
         padding:0px 36px 0px 36px;
     }
 
+    nav {
+        top:0;
+        position:absolute;
+    }
+
+    .linenav > a {
+        display:inline-block;
+        text-decoration:none;
+    }
+
+    .a1 {
+        left:0px;
+        position:absolute;
+        color:rgb(158,226,209);
+        font-size:12px;
+        top:5px;
+        padding-left:15px;
+        padding-right:20px;
+        width:.5px;
+        text-decoration:none;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    .a2 {
+        left:50px;
+        position:absolute;
+        color:rgb(158,226,209);
+        font-size:12px;
+        top:5px;
+        padding-left:15px;
+        padding-right:20px;
+        width:13.5px;
+        text-decoration:none;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    .a3 {
+        left:110px;
+        position:absolute;
+        color:rgb(158,226,209);
+        font-size:12px;
+        top:5px;
+        padding-left:15px;
+        padding-right:20px;
+        width:17.5px;
+        text-decoration:none;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    .a1.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    .a2.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    .a3.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    .linenav:hover::after{
+        width:100%;
+    }
+    /*INSTAGRAM BUTTON
+    .social {
+        width:20px;
+        height:20px;
+        position:absolute;
+        left:500px;
+        top:5px;
+    }
+
+    .social:hover {
+        transition: .5s;
+        width:25px;
+        height:25px;
+
+    }
+    */
+    a {
+        text-decoration:none;
+        font-family: 'DM Serif Display', serif;
+    }
     a p {
         font-size:40px;
-        font-family:'Open Sans', sans-serif;
         text-align:center;
-        color:rgb(124, 124, 124);
+        color:rgb(158,226,209);
         flex: 1 1 307;
         margin:20px;
+        border: 2px solid rgba(253, 47, 184, 0.945);
+        font-family: 'DM Serif Display', serif;
     }
 
     a p:active {
-        box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.301);
-        background-color:rgb(233, 233, 233);
+        border:2px solid rgb(158,226,209);
         text-decoration:none;
-        color:white;
-        text-shadow; 
+        color:rgba(253, 47, 184, 0.945);
     }
 
     /*Text Styles*/
     
     h1 {
-        font-family:'Open Sans', sans-serif;
         padding:5px 0px 0px 30px;
         flex: 1 1 307;
     }
 
     h2 {
         font-size:26px;
-        font-family:'Open Sans', sans-serif;
         text-align:center;
         letter-spacing:1px;
-        color:rgb(61, 61, 61);
+        color:rgb(158,226,209);
         flex: 1 1 307;
+        font-family: 'Abril Fatface', cursive;
     }
 
     h3 {
         font-size:25px;
-        font-family:'Open Sans', sans-serif;
         text-align:center;
-        color:rgb(97, 97, 97);
+        font-family: 'Josefin Slab', serif;
+        color:rgb(158,226,209);
         flex: 1 1 307;
     }
 
     p {
         font-size:15px;
-        font-family:'Open Sans', sans-serif;
+        font-family: 'Josefin Slab', serif;
         text-align:center;
-        color:rgb(124, 124, 124);
+        color:rgb(158,226,209);
         flex: 1 1 307;
         margin:20px;
     }
 
     div.main > h2 {
         letter-spacing:10px;
-        background:linear-gradient(rgb(255, 157, 0), rgb(255, 145, 0));
+        background-color: rgb(158,226,209);
         color:rgb(255, 255, 255);
     }
 
     .footh2 {
         font-size:26px;
-        font-family:'Open Sans', sans-serif;
+        font-family: 'Abril Fatface', cursive;
         text-align:left;
         padding-left:30px;
         letter-spacing:1px;
-        color:rgb(202, 202, 202);
+        color:rgb(158,226,209);
         flex: 1 1 307;
     }
 
     .footh3 {
         font-size:20px;
-        font-family:'Open Sans', sans-serif;
+        font-family: 'Josefin Slab', serif;
         text-align:left;
         padding-left:30px;
-        color:rgb(129, 129, 129);
+        color:rgb(158,226,209);
         flex: 1 1 307;
     }
 

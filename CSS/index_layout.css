@@ -18,12 +18,32 @@
     */
 
     /*HTML Styles */
-    *::selection::-moz-selection,::-ms-selection::-webkit-selection {
+    *::selection {
         background-color:rgba(253, 47, 184, 0.945);
     }
     html {
         background-color:rgba(255, 70, 193, 0.876);
         scroll-behavior:smooth;
+    }
+
+    html.Gallery {
+        background-color:rgba(255, 70, 193, 0.876);
+        scroll-behavior:smooth;
+    }
+
+    html.index {
+        background-color:rgba(255, 70, 193, 0.876);
+        scroll-behavior:smooth;
+    }
+
+    html.resume {
+        background-color:rgba(255, 70, 193, 0.876);
+        scroll-behavior:smooth;
+    }
+    
+
+    html.altcolor {
+        background-color:rgb(158,226,209);
     }
 
     /*Body Styles*/
@@ -181,7 +201,6 @@
         text-decoration:none;
         border-radius: 0px 20px 0px 20px;
         color:rgb(158,226,209);
-        font-family:'Vision-Heavy';
         font-style:bold;
         letter-spacing:1px;
         display:flexbox;
@@ -192,11 +211,29 @@
         top:0;
         position:absolute;
     }
+    
+    html.altcolor .linenav > a {
+        display:inline-block;
+        text-decoration:none;
+    }
 
     .linenav > a {
         display:inline-block;
         text-decoration:none;
     }
+
+html.altcolor .a1 {
+    left:0px;
+    position:absolute;
+    color:rgba(253, 47, 184, 0.945);
+    font-size:12px;
+    top:5px;
+    padding-left:15px;
+    padding-right:20px;
+    width:.5px;
+    text-decoration:none;
+    font-family: 'Abril Fatface', cursive;
+}
 
     .a1 {
         left:0px;
@@ -207,6 +244,19 @@
         padding-left:15px;
         padding-right:20px;
         width:.5px;
+        text-decoration:none;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    html.altcolor .a2 {
+        left:50px;
+        position:absolute;
+        color:rgba(253, 47, 184, 0.945);
+        font-size:12px;
+        top:5px;
+        padding-left:15px;
+        padding-right:20px;
+        width:13.5px;
         text-decoration:none;
         font-family: 'Abril Fatface', cursive;
     }
@@ -224,6 +274,19 @@
         font-family: 'Abril Fatface', cursive;
     }
 
+    html.altcolor .a3 {
+        left:110px;
+        position:absolute;
+        color:rgba(253, 47, 184, 0.945);
+        font-size:12px;
+        top:5px;
+        padding-left:15px;
+        padding-right:20px;
+        width:17.5px;
+        text-decoration:none;
+        font-family: 'Abril Fatface', cursive;
+    }
+
     .a3 {
         left:110px;
         position:absolute;
@@ -235,6 +298,17 @@
         width:17.5px;
         text-decoration:none;
         font-family: 'Abril Fatface', cursive;
+    }
+    
+    html.altcolor .a1.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
     }
 
     .a1.linenav::after {
@@ -248,7 +322,128 @@
         position:absolute;
     }
 
+    html.altcolor .a2.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
     .a2.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.Gallery .a1.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(177, 47, 253, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.index .a1.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.resume .a1.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 147, 47, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.Gallery .a2.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(177, 47, 253, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.resume .a2.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 147, 47, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.index .a2.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.Gallery .a3.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(177, 47, 253, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.resume .a3.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 147, 47, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.index .a3.linenav::after {
+        content:'';
+        display:block;
+        width:0;
+        height:1.5px;
+        border-radius:0px 10px 0px 10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        transition: .5s;
+        position:absolute;
+    }
+
+    html.altcolor .a2.linenav::after {
         content:'';
         display:block;
         width:0;
@@ -273,26 +468,28 @@
     .linenav:hover::after{
         width:100%;
     }
-    /*INSTAGRAM BUTTON
-    .social {
-        width:20px;
-        height:20px;
-        position:absolute;
-        left:500px;
-        top:5px;
+
+    html.altcolor .linenav:hover::after{
+        width:100%;
     }
 
-    .social:hover {
-        transition: .5s;
-        width:25px;
-        height:25px;
-
+    html.Gallery .linenav:hover::after{
+        width:100%;
     }
-    */
+
+    html.index .linenav:hover::after{
+        width:100%;
+    }
+
+    html.resume .linenav:hover::after{
+        width:100%;
+    }
+
     a {
         text-decoration:none;
         font-family: 'DM Serif Display', serif;
     }
+
     a p {
         font-size:40px;
         text-align:center;
@@ -310,10 +507,29 @@
     }
 
     /*Text Styles*/
+
+    p.myskill {
+        color:red;
+        font-size:20px;
+    }
+
+    p.skilllevel {
+        color:grey;
+        font-size:20px;
+    }
     
     h1 {
         padding:5px 0px 0px 30px;
         flex: 1 1 307;
+    }
+
+    html.altcolor h2 {
+        font-size:26px;
+        text-align:center;
+        letter-spacing:1px;
+        color:rgba(253, 47, 184, 0.945);
+        flex: 1 1 307;
+        font-family:'Abril Fatface';
     }
 
     h2 {
@@ -322,15 +538,29 @@
         letter-spacing:1px;
         color:rgb(158,226,209);
         flex: 1 1 307;
-        font-family: 'Abril Fatface', cursive;
+        font-family:'Abril Fatface';
+    }
+
+    html.altcolor h3 {
+        font-size:25px;
+        text-align:center;
+        font-family: 'Josefin Slab';
+        color:rgba(253, 47, 184, 0.945);
     }
 
     h3 {
         font-size:25px;
         text-align:center;
-        font-family: 'Josefin Slab', serif;
+        font-family: 'Josefin Slab';
         color:rgb(158,226,209);
-        flex: 1 1 307;
+    }
+
+    html.altcolor p {
+        font-size:15px;
+        font-family: 'Josefin Slab', serif;
+        text-align:center;
+        color:rgba(253, 47, 184, 0.945);
+        margin:20px;
     }
 
     p {
@@ -338,8 +568,12 @@
         font-family: 'Josefin Slab', serif;
         text-align:center;
         color:rgb(158,226,209);
-        flex: 1 1 307;
         margin:20px;
+    }
+    html.altcolor div.main > h2 {
+        letter-spacing:10px;
+        background-color:rgba(253, 47, 184, 0.945);
+        color:rgb(255, 255, 255);
     }
 
     div.main > h2 {
@@ -347,7 +581,16 @@
         background-color: rgb(158,226,209);
         color:rgb(255, 255, 255);
     }
-
+    html.altcolor .footh2 {
+        font-size:26px;
+        font-family: 'Abril Fatface', cursive;
+        text-align:left;
+        padding-left:30px;
+        letter-spacing:1px;
+        color:rgba(253, 47, 184, 0.945);
+        flex: 1 1 307;
+    }
+    
     .footh2 {
         font-size:26px;
         font-family: 'Abril Fatface', cursive;
@@ -355,6 +598,15 @@
         padding-left:30px;
         letter-spacing:1px;
         color:rgb(158,226,209);
+        flex: 1 1 307;
+    }
+    
+    html.altcolor .footh3 {
+        font-size:20px;
+        font-family: 'Josefin Slab', serif;
+        text-align:left;
+        padding-left:30px;
+        color:rgba(253, 47, 184, 0.945);
         flex: 1 1 307;
     }
 

@@ -1,4 +1,4 @@
-/*MOBILE*/@media only screen and (min-width:307px) and (max-width:600px){
+/*MOBILE&TABLET*/@media only screen and (min-width:601px) and (max-width:1024px){
 
     /*Fonts*/
     @import url('https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Cormorant+Upright|DM+Serif+Display|Fredericka+the+Great|Josefin+Slab|Lobster|Megrim|Plaster|Quicksand|Rozha+One|Sacramento|Sulphur+Point&display=swap');

@@ -17,6 +17,12 @@
     font-family: 'Plaster', cursive;
     */
 
+    /*Loading Screen*/
+    .loadscreen{
+        background-image:url('../IMGS/34.png');
+        background-size: cover;
+    }
+
     /*HTML Styles */
     *::selection {
         background-color:rgba(253, 47, 184, 0.945);

@@ -18,9 +18,18 @@
     */
 
     /*Loading Screen*/
+    #loadin {
+        display: none;
+        text-align: center;
+      }
+    
+    #load{
+        height:100px;
+        width:100px;
+    }
     .loadscreen{
-        background-image:url('../IMGS/34.png');
-        background-size: cover;
+        width:1%;
+        height:1%;
     }
 
     /*HTML Styles */
